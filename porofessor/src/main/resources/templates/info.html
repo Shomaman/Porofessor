@@ -5,6 +5,41 @@
     <title>Info about Summoner</title>
 </head>
 <body>
-    <p th:text="${summonnerName}"></p>
+<table>
+    <tr>
+        <td>name</td>
+        <td>id</td>
+        <td>accountId</td>
+        <td>puuid</td>
+        <td>profileIconId</td>
+        <td>revisionDate</td>
+        <td>summonerLevel</td>
+    </tr>
+    <tr>
+    <td th:text="${name}"></td>
+    <td th:text="${id}"></td>
+    <td th:text="${accountId}"></td>
+    <td th:text="${puuid}"></td>
+    <td th:text="${profileIconId}"></td>
+    <td th:text="${revisionDate}"></td>
+    <td th:text="${summonerLevel}"></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td>kills</td>
+        <td>deaths</td>
+        <td>assists</td>
+        <td>winrate</td>
+        <td>countGames</td>
+    </tr>
+    <tr>
+        <td th:text="${kills}"></td>
+        <td th:text="${deaths}"></td>
+        <td th:text="${assists}"></td>
+        <td th:text="${winrate}"></td>
+        <td th:text="${countGames}"></td>
+    </tr>
+</table>
 </body>
 </html>
